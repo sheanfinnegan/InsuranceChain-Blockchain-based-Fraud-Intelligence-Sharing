@@ -1,0 +1,181 @@
+:root {
+  --honeycomb: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='208' viewBox='0 0 120 208'%3E%3Cpath d='M60 0L120 35V104L60 139L0 104V35ZM0 104L60 139V208M120 104L60 139M60 0V-69' fill='none' stroke='white' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E");
+}
+.workspace,
+.auth-story,
+.auth-form,
+.sidebar,
+.topbar,
+.case-dossier,
+.modal,
+.main-content {
+  background-image: var(--honeycomb) !important;
+  background-size: 120px 208px;
+}
+.login-intro {
+  color: #a6a0b5;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 440px;
+  margin: 22px 0 30px;
+}
+.login-assurance {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 24px;
+  color: #938b9e;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.evidence-board {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 20px;
+  margin-top: 22px;
+}
+.evidence-board aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.evidence-board aside button {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  background: #17131e;
+  border: 1px solid #33273e;
+  border-radius: 10px;
+  padding: 16px;
+  color: #c3b9d0;
+  overflow-wrap: anywhere;
+}
+.evidence-board aside button.selected {
+  border-color: #a881ee;
+  background: #271d37;
+}
+.evidence-board aside span,
+.evidence-board small {
+  font-size: 10px;
+  color: #aaa0b8;
+}
+.evidence-board aside strong {
+  font-size: 11px;
+}
+.evidence-board section {
+  min-width: 0;
+}
+.evidence-board header,
+.evidence-board footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 0;
+}
+.evidence-board h3 {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.evidence-preview {
+  background: #e7e5e9;
+  border-radius: 8px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #29232e;
+}
+.evidence-preview iframe {
+  width: 100%;
+  height: 540px;
+  border: 0;
+}
+.evidence-preview img {
+  max-width: 100%;
+  max-height: 650px;
+  object-fit: contain;
+}
+.evidence-preview pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 24px;
+  font: 12px/1.8 monospace;
+  align-self: flex-start;
+  max-width: 100%;
+}
+.evidence-board footer {
+  font-size: 10px;
+  color: #a69aaf;
+}
+.evidence-board details code {
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+.form-grid > label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .evidence-board {
+    grid-template-columns: 1fr;
+  }
+  .evidence-board aside {
+    flex-direction: row;
+    overflow: auto;
+  }
+  .evidence-board aside button {
+    min-width: 150px;
+  }
+  .login-assurance {
+    flex-wrap: wrap;
+  }
+}
+.content,
+.main-shell {
+  background-image: var(--honeycomb);
+  background-size: 120px 208px;
+}
+.pdf-viewer {
+  width: 100%;
+  padding: 12px;
+}
+.pdf-viewer canvas {
+  max-width: 100%;
+  height: auto;
+  background: white;
+  box-shadow: 0 4px 20px #0002;
+}
+.pdf-toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0 16px;
+  font-size: 12px;
+}
+.pdf-toolbar button {
+  background: #352647;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 13px;
+}
+.pdf-toolbar button:disabled {
+  opacity: 0.4;
+}
+
+.stat-grid.staff-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.overview-grid.staff-overview {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 600px) {
+  .stat-grid.staff-stats {
+    grid-template-columns: 1fr;
+  }
+}

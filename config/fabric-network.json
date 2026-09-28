@@ -1,0 +1,32 @@
+{
+  "channel": "insurance",
+  "chaincode": "insurance",
+  "organizations": {
+    "Org1MSP": {
+      "org": "org1",
+      "endpoint": "localhost:17051",
+      "peer": "peer0.org1.insurance.local"
+    },
+    "Org2MSP": {
+      "org": "org2",
+      "endpoint": "localhost:19051",
+      "peer": "peer0.org2.insurance.local"
+    },
+    "Org3MSP": {
+      "org": "org3",
+      "endpoint": "localhost:11051",
+      "peer": "peer0.org3.insurance.local"
+    },
+    "Org4MSP": {
+      "org": "org4",
+      "endpoint": "localhost:12051",
+      "peer": "peer0.org4.insurance.local"
+    },
+    "Org5MSP": {
+      "org": "org5",
+      "endpoint": "localhost:13051",
+      "peer": "peer0.org5.insurance.local"
+    },
+    "OJKMSP": { "org": "ojk", "endpoint": "localhost:14051", "peer": "peer0.ojk.insurance.local" }
+  }
+}

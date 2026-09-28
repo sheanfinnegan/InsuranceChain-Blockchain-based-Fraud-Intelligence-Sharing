@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.runtime/
+.proposal-tools/
+data/
+output/
+test-results/
+playwright-report/
+chaincode/vendor/
+public/
+package-lock.json
+next-env.d.ts
+*.tsbuildinfo
+proposal-extracted.txt
+AGENTS.md
+CLAUDE.md
+docs/
